@@ -1,9 +1,9 @@
 # Data hub graphql-server
 
-[![Build Status](https://travis-ci.org/epicallan/datahub-api.svg?branch=master)](https://travis-ci.org/epicallan/datahub-api)
-![Code Climate](https://codeclimate.com/github/epicallan/datahub-api.svg)
-[![codecov](https://codecov.io/gh/epicallan/datahub-api/branch/master/graph/badge.svg)](https://codecov.io/gh/epicallan/datahub-api)
-[![Dependency Status](https://gemnasium.com/badges/github.com/epicallan/datahub-api.svg)](https://gemnasium.com/github.com/epicallan/datahub-api)
+[![Build Status](https://travis-ci.org/epicallan/webpack-graphql-typescript.svg?branch=master)](https://travis-ci.org/epicallan/webpack-graphql-typescript)
+![Code Climate](https://codeclimate.com/github/epicallan/webpack-graphql-typescript.svg)
+[![codecov](https://codecov.io/gh/epicallan/webpack-graphql-typescript/branch/master/graph/badge.svg)](https://codecov.io/gh/epicallan/webpack-graphql-typescript)
+[![Dependency Status](https://gemnasium.com/badges/github.com/epicallan/webpack-graphql-typescript.svg)](https://gemnasium.com/github.com/epicallan/webpack-graphql-typescript)
 
 Webpack typescript Graphql server start kit that grew out of a need for a project i am working on
 

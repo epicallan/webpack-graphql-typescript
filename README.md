@@ -5,7 +5,8 @@
 [![codecov](https://codecov.io/gh/epicallan/webpack-graphql-typescript/branch/master/graph/badge.svg)](https://codecov.io/gh/epicallan/webpack-graphql-typescript)
 [![Dependency Status](https://gemnasium.com/badges/github.com/epicallan/webpack-graphql-typescript.svg)](https://gemnasium.com/github.com/epicallan/webpack-graphql-typescript)
 
-Webpack typescript Graphql server start kit that grew out of a need for a project i am working on
+Webpack typescript Graphql server start kit inspired greatly by
+(DxCx/webpack-graphql-server)[https://github.com/DxCx/webpack-graphql-server] that grew out of a need for a project I am working on.
 
 Useful commands:
 ----

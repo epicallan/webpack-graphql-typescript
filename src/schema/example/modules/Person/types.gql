@@ -1,0 +1,25 @@
+type PersonType {
+  name: String
+  id: String
+  sex: String
+}
+
+type AgilityMeasure {
+  value: Int
+}
+
+type Extra {
+  speed: Int
+  person: PersonType
+  agility(height: Int): AgilityMeasure
+}
+
+type Query {
+  getPerson(id: String!): PersonType
+  persons: [PersonType]
+  getPersonWithExtra: Extra 
+}
+
+type Mutation {
+  addPerson(name: String!, sex: String!): PersonType
+}

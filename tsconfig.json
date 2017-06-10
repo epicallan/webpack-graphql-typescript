@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "outDir": "dist",
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths":{
+      "*": ["node_modules", "src"]
+    },
+    "rootDirs": [
+      "src"
+    ],
+    "typeRoots" : ["./src/types", "./node_modules/@types"]
+  },
+  "files": [
+    "src/main.ts",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

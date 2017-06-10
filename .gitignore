@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+dist/
+.tmp/
+*.log
+*.tgz
+*.yaml
+.idea/
+.vscode
+.DS_Store
+package-lock.json
+yarn.lock

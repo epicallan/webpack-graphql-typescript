@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gql Types to Typescript types End to End test: should create typescript types from graphql files 1`] = `
+"\\"// tslint:disable
+// graphql typescript definitions
+
+declare namespace DH {
+  interface IGraphQLResponseRoot {
+    data?: IQuery | IMutation;
+    errors?: Array<IGraphQLResponseError>;
+  }
+
+  interface IGraphQLResponseError {
+    message: string;            // Required for all errors
+    locations?: Array<IGraphQLResponseErrorLocation>;
+    [propName: string]: any;    // 7.2.2 says 'GraphQL servers may provide additional entries to error'
+  }
+
+  interface IGraphQLResponseErrorLocation {
+    line: number;
+    column: number;
+  }
+
+  /*
+    description: 
+  */
+  interface IQuery {
+    getPerson: IPersonType | null;
+    persons: Array<IPersonType> | null;
+    getPersonWithExtra: IExtra | null;
+  }
+
+  /*
+    description: 
+  */
+  interface IPersonType {
+    name: string | null;
+    id: string | null;
+    sex: string | null;
+  }
+
+  /*
+    description: 
+  */
+  interface IExtra {
+    speed: number | null;
+    person: IPersonType | null;
+    agility: IAgilityMeasure | null;
+  }
+
+  /*
+    description: 
+  */
+  interface IAgilityMeasure {
+    value: number | null;
+  }
+
+  /*
+    description: 
+  */
+  interface IMutation {
+    addPerson: IPersonType | null;
+  }
+}
+
+// tslint:enable
+\\""
+`;
+
+exports[`gql Types to Typescript types should return merged typedefs 1`] = `
+"\\"
+    schema {
+      query: Query
+      mutation: Mutation
+      
+    }
+
+    type Query {
+     getPerson(id: String!): PersonType persons: [PersonType] getPersonWithExtra: Extra
+  }
+
+    type Mutation {
+     addPerson(name: String!, sex: String!): PersonType
+  }
+
+    
+  type PersonType {
+  name: String
+  id: String
+  sex: String
+}type AgilityMeasure {
+  value: Int
+}type Extra {
+  speed: Int
+  person: PersonType
+  agility(height: Int): AgilityMeasure
+}\\""
+`;

@@ -1,0 +1,15 @@
+---
+engines:
+  tslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.ts"
+exclude_paths:
+- node_modules
+- dist
+- coverage/
+- .out/
+- .vscode

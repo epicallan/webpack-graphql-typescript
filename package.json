@@ -82,7 +82,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "git-pre-hooks": {
-    "pre-push": "npm run test"
+    "pre-push": "npm test"
   },
   "jest": {
     "transform": {

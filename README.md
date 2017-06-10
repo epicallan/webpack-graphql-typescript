@@ -15,6 +15,7 @@ Useful commands:
     npm run dev         - Start the server in watchmode (Useful for development)
     npm test            - run tests once
     npm run test:watch  - run tests in watchmode (Useful for development)
+    npm run gqlToTs     - builds out typescript types from your graphql types and puts them in src/types
 How to run it:
 ----
 ```bash

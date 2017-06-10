@@ -55,4 +55,5 @@ $ yarn add --dev @types/fs-extra
 TODO
 
 - [ ] add more guidlines
-- [ ] publisht to yeoman and neutrino˜
+- [ ] publisht to yeoman and neutrino
+- [ ] possibly move some of the library code into a separate npm package
